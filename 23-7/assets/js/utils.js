@@ -5,10 +5,8 @@
  * @returns {Element | null}
  */
 export const $ = (selector, root = document) => root.querySelector(selector);
-export const $$ = (selector, root = document) =>
-  Array.from(root.querySelectorAll(selector));
-export const formatPrice = (str) =>
-  new Intl.NumberFormat("vi-VN").format(str) + "đ";
+export const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
+export const formatPrice = (str) => new Intl.NumberFormat("vi-VN").format(str) + "đ";
 export const formatTime = (str) => {
   if (!str) return "";
   const date = new Date(str);

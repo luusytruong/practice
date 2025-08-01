@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Tailwind Slider</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black flex items-center justify-center min-h-screen">
+    <div class="relative w-full aspect-video overflow-hidden rounded-xl">
+      <div id="slider" class="slider h-full">
+        <img
+          src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg"
+          class="slide"
+        />
+        <img
+          src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg"
+          class="slide"
+        />
+        <img
+          src="https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg"
+          class="slide"
+        />
+      </div>
+
+      <!-- Controls -->
+      <button
+        onclick="prevSlide()"
+        class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/70 text-black px-3 py-1 rounded-full z-20 active:scale-90"
+      >
+        ‹
+      </button>
+      <button
+        onclick="nextSlide()"
+        class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/70 text-black px-3 py-1 rounded-full z-20 active:scale-90"
+      >
+        ›
+      </button>
+    </div>
+
+    <script>
+      const slider = document.getElementById("slider");
+      const totalSlides = slider.children.length;
+      let index = 0;
+      let intervalId;
+
+      function updateSlide() {
+        autoSlide();
+        const containerWidth = slider.parentElement.clientWidth;
+        slider.style.transform = `translateX(-${index * containerWidth}px)`;
+      }
+
+      function nextSlide() {
+        index = (index + 1) % totalSlides;
+        updateSlide();
+      }
+
+      function prevSlide() {
+        index = (index - 1 + totalSlides) % totalSlides;
+        updateSlide();
+      }
+
+      function autoSlide() {
+        clearInterval(intervalId);
+        intervalId = setInterval(() => {
+          nextSlide();
+        }, 3000);
+      }
+
+      window.addEventListener("resize", updateSlide);
+      window.addEventListener("load", () => {
+        updateSlide();
+      });
+    </script>
+  </body>
+</html>

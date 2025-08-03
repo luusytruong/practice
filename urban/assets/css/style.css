@@ -4,3 +4,9 @@
     overscroll-behavior: none;
     transition: all 0.24s, margin 0, outline 0, font-size 0 !important;
 }
+
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}

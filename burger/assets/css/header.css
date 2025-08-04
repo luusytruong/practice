@@ -1,0 +1,24 @@
+.Phone {
+    font-size: 16px;
+    font-family: "Montserrat";
+    color: #3d2514;
+    font-weight: bold;
+    text-align: right;
+}
+
+.header-nav-link {
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    color: #3d2514;
+}
+
+.font-bebas {
+    font-family: "Bebas Neue";
+    color: #3d2514;
+}
+
+.font-alf {
+    font-family: "Alfa Slab One";
+    color: #3d2514;
+    text-shadow: 3.936px 4.528px 0px rgba(254, 232, 188, 0.004);
+}

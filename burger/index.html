@@ -7,16 +7,79 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./assets/css/header.css">
     <title>Burger</title>
 </head>
 
 <body>
-    <div class="root">
-        <header>
+    <div class="root relative">
+        <header class="flex">
+            <div class="h-[180px] container mx-auto max-w-[1440px] px-[57px] flex items-center justify-between">
+                <a href="./index.html"><img src="./assets/images/header/logo.png" alt="logo"></a>
+                <div class="flex flex-col items-end">
+                    <div class="flex items-center gap-2">
+                        <img src="./assets/images/header/motor.svg" alt="motor">
+                        <p class="Phone">Express Delivery +1 234 567 890</p>
+                    </div>
+                    <nav class="flex mt-6">
+                        <ul class="flex gap-14.5">
+                            <li class="flex"><a class="header-nav-link" href="#">Home</a></li>
+                            <li class="flex"><a class="header-nav-link" href="#">Menu</a></li>
+                            <li class="flex"><a class="header-nav-link" href="#">Our story</a></li>
+                            <li class="flex"><a class="header-nav-link" href="#">Contact us</a></li>
+                        </ul>
 
+                    </nav>
+                </div>
+            </div>
         </header>
-        <section></section>
+        <section class="flex h-[calc(825px-180px)]">
+            <div class="container mx-auto max-w-[1440px] px-[57px]">
+                <img class="absolute top-0 inset-x-0 h-[825px] w-full object-cover -z-10"
+                    src="./assets/images/banner/bg-banner.png" alt="banner">
+                <div class="flex gap-[94px] items-center justify-between">
+                    <div class="flex flex-col items-start">
+                        <p
+                            class="w-[404px] h-[50px] uppercase font-bebas text-2xl font-[400] border-2 border-dashed text-center leading-[50px] align-middle">
+                            It is a good time for the
+                            great taste of burgers</p>
+                        <p class="font-alf text-[114px] uppercase drop-shadow-[3px_8px_0px_#fee8bc] flex">Burger</p>
+                        <p class="font-alf text-[56px] drop-shadow-[3px_8px_0px_#fee8bc] -mt-5">WEEK</p>
+                    </div>
+                    <img src="./assets/images/banner/bugur.png" alt="burger">
+                </div>
+            </div>
+        </section>
         <main>
+            <section class="container mx-auto max-w-[1440px] px-[103px] h-[617px] pt-19.5">
+                <div class="grid grid-cols-2 gap-10.5 h-[420px]">
+                    <div class="flex relative">
+                        <img class="relative inset-0 object-cover" src="./assets/images/try-it-today/img1.png"
+                            alt="try-1">
+                        <div class="absolute inset-0 p-6 !text-white uppercase font-bebas">
+                            <p class="text-2xl leading-7">try it today</p>
+                            <p class="text-[42px] leading-9">most popular burger</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-stretch justify-center gap-[35px]">
+                        <div class="flex relative">
+                            <img src="./assets/images/try-it-today/img2.png" alt="try-2">
+                            <div class="p-7.5 absolute inset-0 !text-white uppercase font-bebas">
+                                <p class="text-2xl leading-7">try it today</p>
+                                <p class="text-[42px] leading-9">more fun</p>
+                                <p class="text-[42px] leading-9.5">more taste</p>
+                            </div>
+                        </div>
+                        <div class="flex relative">
+                            <img src="./assets/images/try-it-today/img3.png" alt="try-2">
+                            <div class="p-7.5 absolute inset-0 !text-white uppercase font-bebas">
+                                <p class="text-2xl leading-7">try it today</p>
+                                <p class="text-[42px] leading-9">fresh & chili</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section></section>
 
         </main>

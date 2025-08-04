@@ -1,0 +1,14 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+}
+
+.product__nav{
+    display: flex;
+}
+
+.product__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}

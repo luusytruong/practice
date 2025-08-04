@@ -13,85 +13,168 @@
 
 <body>
     <div class="root relative">
-        <header class="flex">
-            <div class="h-[180px] container mx-auto max-w-[1440px] px-[57px] flex items-center justify-between">
-                <a href="./index.html"><img src="./assets/images/header/logo.png" alt="logo"></a>
-                <div class="flex flex-col items-end">
-                    <div class="flex items-center gap-2">
-                        <img src="./assets/images/header/motor.svg" alt="motor">
-                        <p class="Phone">Express Delivery +1 234 567 890</p>
+        <div class="relative h-fit overflow-hidden pb-12 xl:p-0">
+            <img class="absolute h-full w-full object-cover -z-10" src="./assets/images/banner/bg-banner.png"
+                alt="banner">
+            <header class="flex">
+                <div
+                    class="pb-12 pt-4 lg:py-0 lg:h-[180px] container mx-auto max-w-[1440px] px-[57px] flex items-center justify-between lg:flex-row flex-col-reverse gap-4 lg:gap-0">
+                    <div class="flex items-center lg:w-auto w-full">
+                        <a href="./index.html"><img class="w-[180px] md:w-[200px] lg:w-auto" src="./assets/images/header/logo.png" alt="logo"></a>
+                        <button class="ml-auto p-3 overflow-hidden aspect-square grid place-items-center lg:hidden">
+                            <i class="fa-solid fa-bars text-2xl md:text-3xl text-[#43200b]"></i>
+                        </button>
                     </div>
-                    <nav class="flex mt-6">
-                        <ul class="flex gap-14.5">
-                            <li class="flex"><a class="header-nav-link" href="#">Home</a></li>
-                            <li class="flex"><a class="header-nav-link" href="#">Menu</a></li>
-                            <li class="flex"><a class="header-nav-link" href="#">Our story</a></li>
-                            <li class="flex"><a class="header-nav-link" href="#">Contact us</a></li>
-                        </ul>
-
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <section class="flex h-[calc(825px-180px)]">
-            <div class="container mx-auto max-w-[1440px] px-[57px]">
-                <img class="absolute top-0 inset-x-0 h-[825px] w-full object-cover -z-10"
-                    src="./assets/images/banner/bg-banner.png" alt="banner">
-                <div class="flex gap-[94px] items-center justify-between">
-                    <div class="flex flex-col items-start">
-                        <p
-                            class="w-[404px] h-[50px] uppercase font-bebas text-2xl font-[400] border-2 border-dashed text-center leading-[50px] align-middle">
-                            It is a good time for the
-                            great taste of burgers</p>
-                        <p class="font-alf text-[114px] uppercase drop-shadow-[3px_8px_0px_#fee8bc] flex">Burger</p>
-                        <p class="font-alf text-[56px] drop-shadow-[3px_8px_0px_#fee8bc] -mt-5">WEEK</p>
+                    <div class="flex flex-col items-end">
+                        <div class="flex items-center gap-2">
+                            <img class="xl:w-auto w-[30px]" src="./assets/images/header/motor.svg" alt="motor">
+                            <p class="Phone xl:text-base text-sm">Express Delivery +1 234 567 890</p>
+                        </div>
+                        <nav class="hidden lg:flex mt-6">
+                            <ul class="flex gap-14.5">
+                                <li><a class="header-nav-link" href="#">Home</a></li>
+                                <li><a class="header-nav-link" href="#">Menu</a></li>
+                                <li><a class="header-nav-link" href="#">Our story</a></li>
+                                <li><a class="header-nav-link" href="#">Contact us</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                    <img src="./assets/images/banner/bugur.png" alt="burger">
                 </div>
-            </div>
-        </section>
+            </header>
+            <section class="flex xl:h-[calc(825px-180px)]">
+                <div class="container mx-auto max-w-[1440px] px-[57px]">
+                    <div class="flex items-center justify-between xl:flex-row flex-col">
+                        <div class="flex flex-col items-start">
+                            <p
+                                class="md:w-[404px] md:h-[50px] px-3 py-1 md:p-0 uppercase font-bebas md:text-2xl font-[400] border-2 border-dashed text-center md:leading-[50px] align-middle">
+                                It is a good time for the
+                                great taste of burgers</p>
+                            <p
+                                class="font-alf text-7xl md:text-[100px] lg:text-[114px] uppercase drop-shadow-[3px_8px_0px_#fee8bc] flex my-4">
+                                Burger</p>
+                            <p class="font-alf text-[56px] drop-shadow-[3px_8px_0px_#fee8bc] -mt-5">WEEK</p>
+                        </div>
+                        <img src="./assets/images/banner/bugur.png" alt="burger">
+                    </div>
+                </div>
+            </section>
+        </div>
         <main>
-            <section class="container mx-auto max-w-[1440px] px-[103px] h-[617px] pt-19.5">
-                <div class="grid grid-cols-2 gap-10.5 h-[420px]">
+            <section class="container mx-auto max-w-[1440px] px-10 lg:px-[103px] md:h-[617px] pt-19.5 mb-10">
+                <div class="grid md:grid-cols-2 gap-10.5 md:h-[420px] mb-[71px]">
                     <div class="flex relative">
-                        <img class="relative inset-0 object-cover" src="./assets/images/try-it-today/img1.png"
-                            alt="try-1">
+                        <img class="rounded-lg relative inset-0 object-cover"
+                            src="./assets/images/try-it-today/img1.png" alt="try-1">
                         <div class="absolute inset-0 p-6 !text-white uppercase font-bebas">
-                            <p class="text-2xl leading-7">try it today</p>
-                            <p class="text-[42px] leading-9">most popular burger</p>
+                            <p class="text-xl md:text-2xl leading-7">try it today</p>
+                            <p class="text-4xl md:text-[42px] leading-9">most popular burger</p>
                         </div>
                     </div>
                     <div class="flex flex-col items-stretch justify-center gap-[35px]">
                         <div class="flex relative">
-                            <img src="./assets/images/try-it-today/img2.png" alt="try-2">
+                            <img class="rounded-lg min-h-[160px]" src="./assets/images/try-it-today/img2.png"
+                                alt="try-2">
                             <div class="p-7.5 absolute inset-0 !text-white uppercase font-bebas">
-                                <p class="text-2xl leading-7">try it today</p>
-                                <p class="text-[42px] leading-9">more fun</p>
-                                <p class="text-[42px] leading-9.5">more taste</p>
+                                <p class="text-xl md:text-2xl leading-7">try it today</p>
+                                <p class="text-4xl md:text-[42px] leading-9">more fun</p>
+                                <p class="text-4xl md:text-[42px] leading-9.5">more taste</p>
                             </div>
                         </div>
                         <div class="flex relative">
-                            <img src="./assets/images/try-it-today/img3.png" alt="try-2">
+                            <img class="rounded-lg min-h-[160px]" src="./assets/images/try-it-today/img3.png"
+                                alt="try-2">
                             <div class="p-7.5 absolute inset-0 !text-white uppercase font-bebas">
-                                <p class="text-2xl leading-7">try it today</p>
-                                <p class="text-[42px] leading-9">fresh & chili</p>
+                                <p class="text-xl md:text-2xl leading-7">try it today</p>
+                                <p class="text-4xl md:text-[42px] leading-9">fresh & chili</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <button class="w-[218px] h-[48px] grid place-items-center bg-[#ffc233] font-bebas text-[25px]">
+                        <span class="-mb-2"> always tasty burger</span>
+                    </button>
+                </div>
+            </section>
+            <section class="container mx-auto max-w-[1440px] lg:h-[741px] mb-10 w-full">
+                <div class="grid justify-between h-full">
+                    <div class="flex flex-col items-center">
+                        <h1 class="font-alf uppercase text-[50px] text-center -mt-3.5">Choose & enjoy</h1>
+                        <p class="font-[Montserrat] text-[#43200b] text-center mt-3 max-w-6xl">Lorem ipsum dolor sit
+                            amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+                            lacus vel facilisis. </p>
+                    </div>
+                    <div class="grid overflow-auto w-full">
+                        <div class="grid grid-cols-3 w-[300%] lg:w-full">
+                            <div class="mt-12 px-12 lg:p-0 flex flex-col justify-end items-stretch text-center">
+                                <img class="relative inset-0 object-contain aspect-5/3"
+                                    src="./assets/images/choose-and-enjoy/Burger2.png" alt="bg-1">
+                                <div class="flex-col flex items-center justify-end">
+                                    <h4 class="font-bebas text-[38px]">Lorem ipsum dolor</h4>
+                                    <p class="font-[Montserrat] text-[#43200b] max-w-sm">Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Nulla excepturi</p>
+                                    <button
+                                        class="bg-[#df1c1c] font-alf !text-white w-[195px] h-[57px] grid place-items-center uppercase mt-8">
+                                        order now
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mt-12 px-12 lg:p-0 flex flex-col justify-end items-stretch text-center">
+                                <img class="relative inset-0 object-contain aspect-5/3"
+                                    src="./assets/images/choose-and-enjoy/Burger3.png" alt="bg-1">
+                                <div class="flex-col flex items-center justify-end">
+                                    <h4 class="font-bebas text-[38px]">Lorem ipsum dolor</h4>
+                                    <p class="font-[Montserrat] text-[#43200b] max-w-sm">Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Nulla excepturi</p>
+                                    <button
+                                        class="bg-[#df1c1c] font-alf !text-white w-[195px] h-[57px] grid place-items-center uppercase mt-8">
+                                        order now
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mt-12 px-12 lg:p-0 flex flex-col justify-end items-stretch text-center">
+                                <img class="relative inset-0 object-contain aspect-5/3"
+                                    src="./assets/images/choose-and-enjoy/Burger2.png" alt="bg-1">
+                                <div class="flex-col flex items-center justify-end">
+                                    <h4 class="font-bebas text-[38px]">Lorem ipsum dolor</h4>
+                                    <p class="font-[Montserrat] text-[#43200b] max-w-sm">Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Nulla excepturi</p>
+                                    <button
+                                        class="bg-[#df1c1c] font-alf !text-white w-[195px] h-[57px] grid place-items-center uppercase mt-8">
+                                        order now
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section></section>
-            
+
             <section class="flex flex-col items-center pt-[132px] pb-[178px] ">
-                <h5 class="text-[28px] text-[#3d2514] leading-[1]">RESERVATION</h5>
-                <h5 class="text-[50px] text-[#3d2514] mt-[12px] font-bold leading-[1]">BOOK YOUR TABLE</h5>
-                <form action="#" method="get" class="grid grid-cols-2 gap-[26px] max-w-[786px] w-full mt-[86px]" >
-                    <input class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#333] placeholder:text-black" placeholder="NAME">
-                    <input class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#333] placeholder:text-black" placeholder="EMAIL">
-                    <input class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#333] placeholder:text-black" placeholder="DATE">
-                    <input class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#333] placeholder:text-black" placeholder="TIME">
-                    <input class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#333] placeholder:text-black" placeholder="PEOPLE">
-                    <input class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#fff] text-2xl bg-[#bf2222] cursor-pointer hover:opacity-80" type="submit" value="FIND A TABLE" >
+                <h5 class="text-[28px] text-[#43200b] leading-[1]">RESERVATION</h5>
+                <h5 class="text-[50px] text-[#43200b] mt-[12px] font-bold leading-[1]">BOOK YOUR TABLE</h5>
+                <form action="#" method="get" class="grid grid-cols-2 gap-[26px] max-w-[786px] w-full mt-[86px]">
+                    <input
+                        class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#333] placeholder:text-black"
+                        placeholder="NAME">
+                    <input
+                        class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#333] placeholder:text-black"
+                        placeholder="EMAIL">
+                    <input
+                        class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#333] placeholder:text-black"
+                        placeholder="DATE">
+                    <input
+                        class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#333] placeholder:text-black"
+                        placeholder="TIME">
+                    <input
+                        class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#333] placeholder:text-black"
+                        placeholder="PEOPLE">
+                    <input
+                        class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#fff] text-2xl bg-[#df1c1c] cursor-pointer hover:opacity-80"
+                        type="submit" value="FIND A TABLE">
                 </form>
                 <!-- <img class="h-[40px]" src="./assets/images/reservation/Burger.png">
                 <img class="h-[40px]" src="./assets/images/reservation/Bottle.png">

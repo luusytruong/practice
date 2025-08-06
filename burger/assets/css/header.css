@@ -1,5 +1,4 @@
 .Phone {
-    font-size: 16px;
     font-family: "Montserrat";
     color: #3d2514;
     font-weight: bold;
@@ -21,4 +20,44 @@
     font-family: "Alfa Slab One";
     color: #3d2514;
     text-shadow: 3.936px 4.528px 0px rgba(254, 232, 188, 0.004);
+}
+
+button {
+    cursor: pointer;
+    user-select: none !important;
+    position: relative;
+
+    &:hover::after {
+        opacity: 1;
+    }
+
+    &:active {
+        opacity: 1;
+        transform: translateY(4px);
+    }
+
+    &:active::after {
+        opacity: 0;
+    }
+
+    * {
+        user-select: none !important;
+    }
+}
+
+button::after {
+    content: '';
+    background-color: #00000011;
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    opacity: 0;
+    transition: 0.06s;
+    mix-blend-mode: color-burn;
+}
+
+* {
+    transition-property: all;
+    transition-duration: 120ms;
+    scrollbar-width: none;
 }

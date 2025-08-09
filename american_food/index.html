@@ -1,100 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="/v3417.tailwindcss.js"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css" />
-</head>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
+    />
+  </head>
 
-<body>
-
+  <body>
     <!-- Header -->
     <header>
-        <div class="logo">
-            <a href="/"><img src="logo.png" alt="Logo Cửa hàng ABC"></a>
-        </div>
+      <div class="logo">
+        <a href="/"><img src="logo.png" alt="Logo Cửa hàng ABC" /></a>
+      </div>
 
-        <!-- Navigation -->
-        <nav>
-            <ul>
-                <li><a href="/">Trang chủ</a></li>
-                <li><a href="/san-pham">Sản phẩm</a></li>
-                <li><a href="/khuyen-mai">Khuyến mãi</a></li>
-                <li><a href="/lien-he">Liên hệ</a></li>
-            </ul>
-        </nav>
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href="/">Trang chủ</a></li>
+          <li><a href="/san-pham">Sản phẩm</a></li>
+          <li><a href="/khuyen-mai">Khuyến mãi</a></li>
+          <li><a href="/lien-he">Liên hệ</a></li>
+        </ul>
+      </nav>
 
-        <!-- Search + Cart -->
-        <div class="header-actions">
-            <form action="/search" method="get">
-                <label for="search" class="visually-hidden">Tìm kiếm</label>
-                <input type="text" id="search" name="q" placeholder="Tìm sản phẩm..." />
-                <button type="submit">Tìm</button>
-            </form>
-            <a href="/gio-hang" class="cart">Giỏ hàng (0)</a>
-        </div>
+      <!-- Search + Cart -->
+      <div class="header-actions">
+        <form action="/search" method="get">
+          <label for="search" class="visually-hidden">Tìm kiếm</label>
+          <input
+            type="text"
+            id="search"
+            name="q"
+            placeholder="Tìm sản phẩm..."
+          />
+          <button type="submit">Tìm</button>
+        </form>
+        <a href="/gio-hang" class="cart">Giỏ hàng (0)</a>
+      </div>
     </header>
 
     <!-- Main content -->
     <main>
+      <!-- Banner / Promotion -->
+      <section aria-label="Khuyến mãi">
+        <img src="banner.jpg" alt="Sale 50% tất cả sản phẩm" />
+      </section>
 
-        <!-- Banner / Promotion -->
-        <section aria-label="Khuyến mãi">
-            <img src="banner.jpg" alt="Sale 50% tất cả sản phẩm">
-        </section>
+      <!-- Product categories -->
+      <section aria-labelledby="categories-title">
+        <h2 id="categories-title">Danh mục sản phẩm</h2>
+        <ul>
+          <li><a href="/danh-muc/ao">Áo</a></li>
+          <li><a href="/danh-muc/quan">Quần</a></li>
+          <li><a href="/danh-muc/giay">Giày</a></li>
+        </ul>
+      </section>
 
-        <!-- Product categories -->
-        <section aria-labelledby="categories-title">
-            <h2 id="categories-title">Danh mục sản phẩm</h2>
-            <ul>
-                <li><a href="/danh-muc/ao">Áo</a></li>
-                <li><a href="/danh-muc/quan">Quần</a></li>
-                <li><a href="/danh-muc/giay">Giày</a></li>
-            </ul>
-        </section>
+      <!-- Featured products -->
+      <section aria-labelledby="featured-title">
+        <h2 id="featured-title">Sản phẩm nổi bật</h2>
+        <div class="product-list">
+          <article class="product">
+            <img src="ao1.jpg" alt="Áo thun nam" />
+            <h3>Áo thun nam</h3>
+            <p class="price">250,000₫</p>
+            <button>Thêm vào giỏ</button>
+          </article>
 
-        <!-- Featured products -->
-        <section aria-labelledby="featured-title">
-            <h2 id="featured-title">Sản phẩm nổi bật</h2>
-            <div class="product-list">
-                <article class="product">
-                    <img src="ao1.jpg" alt="Áo thun nam">
-                    <h3>Áo thun nam</h3>
-                    <p class="price">250,000₫</p>
-                    <button>Thêm vào giỏ</button>
-                </article>
+          <article class="product">
+            <img src="giay1.jpg" alt="Giày thể thao" />
+            <h3>Giày thể thao</h3>
+            <p class="price">450,000₫</p>
+            <button>Thêm vào giỏ</button>
+          </article>
+        </div>
+      </section>
 
-                <article class="product">
-                    <img src="giay1.jpg" alt="Giày thể thao">
-                    <h3>Giày thể thao</h3>
-                    <p class="price">450,000₫</p>
-                    <button>Thêm vào giỏ</button>
-                </article>
-            </div>
-        </section>
+      <!-- blog -->
+      <section class="flex flex-col items-center px-[58px] py-[150px] font-roboto">
+        <img class="h-[152px] w-auto object-contain" src="./assets/images/blog/Title.png" alt="title" />
+        <p class="text-[25px] mt-[40px] max-w-[700px] text-center">
+          Lorem Ipsum available, but the majority have suffered alteration in
+          some form by injected humour
+        </p>
+        <div class="grid grid-cols-3 gap-[42px] mt-[116px]">
+          <img class="" src="./assets/images/blog/left.png" alt="cake" />
+          <div class="">
+            <h4>Eat food. Not too much mostly plants.</h4>
+            <p class="">
+              Lorem Ipsum available, but the majority have suffered alteration
+              some form, by injected humour randomised words.
+            </p>
+            <button>Read More</button>
+          </div>
 
+          <img class="" src="./assets/images/blog/right.png" alt="cake" />
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-        <h2>AMERICAN FOOD</h2>
-        <span>The Best Taste Food</span>
-        <div>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-whatsapp"></i>
-            <p>yourwebsite.com</p>
+    <footer class="relative bg-[#215f00] py-[64px]">
+      <div class="absolute top-0 left-0 right-0 bottom-0">
+        <img
+          class="absolute left-[10%] bottom-[30%]"
+          src="./assets/images/footer/sh2.png"
+          alt="shape"
+        />
+        <img
+          class="absolute right-[10%] top-[30%]"
+          src="./assets/images/footer/sh1.png"
+          alt="shape"
+        />
+      </div>
+      <div
+        class="relative flex flex-col items-center z-10 text-white font-roboto"
+      >
+        <img
+          class="w-[140px] object-cover"
+          src="./assets/images/footer/logo.png"
+          alt="logo"
+        />
+        <h2 class="text-[50px] uppercase mt-5 font-medium leading-[50px]">
+          american food
+        </h2>
+        <span class="text-[33px] font-normal leading-[33px] mt-[8px]"
+          >The Best Taste Food</span
+        >
+        <div class="flex mt-[47px] gap-[13px]">
+          <i
+            class="text-[#215f00] text-[20px] w-[34px] h-[34px] flex items-center justify-center bg-white rounded-full fa-brands fa-instagram"
+          ></i>
+          <i
+            class="text-[#215f00] text-[20px] w-[34px] h-[34px] flex items-center justify-center bg-white rounded-full fa-brands fa-facebook-f"
+          ></i>
+          <i
+            class="text-[#215f00] text-[20px] w-[34px] h-[34px] flex items-center justify-center bg-white rounded-full fa-brands fa-twitter"
+          ></i>
+          <i
+            class="text-[#215f00] text-[20px] w-[34px] h-[34px] flex items-center justify-center bg-white rounded-full fa-brands fa-whatsapp"
+          ></i>
         </div>
-        <div>
-            <img src="" alt="shape">
-        </div>
+        <p class="text-[42px] pt-[35px]">yourwebsite.com</p>
+      </div>
     </footer>
     <script src="./assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>

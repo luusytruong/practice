@@ -36,10 +36,6 @@ button {
         transform: translateY(4px);
     }
 
-    &:active::after {
-        opacity: 0;
-    }
-
     * {
         user-select: none !important;
     }

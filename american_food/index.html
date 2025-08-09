@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/v3417.tailwindcss.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="/"><img src="logo.png" alt="Logo Cửa hàng ABC"></a>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="/">Trang chủ</a></li>
+                <li><a href="/san-pham">Sản phẩm</a></li>
+                <li><a href="/khuyen-mai">Khuyến mãi</a></li>
+                <li><a href="/lien-he">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <!-- Search + Cart -->
+        <div class="header-actions">
+            <form action="/search" method="get">
+                <label for="search" class="visually-hidden">Tìm kiếm</label>
+                <input type="text" id="search" name="q" placeholder="Tìm sản phẩm..." />
+                <button type="submit">Tìm</button>
+            </form>
+            <a href="/gio-hang" class="cart">Giỏ hàng (0)</a>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+
+        <!-- Banner / Promotion -->
+        <section aria-label="Khuyến mãi">
+            <img src="banner.jpg" alt="Sale 50% tất cả sản phẩm">
+        </section>
+
+        <!-- Product categories -->
+        <section aria-labelledby="categories-title">
+            <h2 id="categories-title">Danh mục sản phẩm</h2>
+            <ul>
+                <li><a href="/danh-muc/ao">Áo</a></li>
+                <li><a href="/danh-muc/quan">Quần</a></li>
+                <li><a href="/danh-muc/giay">Giày</a></li>
+            </ul>
+        </section>
+
+        <!-- Featured products -->
+        <section aria-labelledby="featured-title">
+            <h2 id="featured-title">Sản phẩm nổi bật</h2>
+            <div class="product-list">
+                <article class="product">
+                    <img src="ao1.jpg" alt="Áo thun nam">
+                    <h3>Áo thun nam</h3>
+                    <p class="price">250,000₫</p>
+                    <button>Thêm vào giỏ</button>
+                </article>
+
+                <article class="product">
+                    <img src="giay1.jpg" alt="Giày thể thao">
+                    <h3>Giày thể thao</h3>
+                    <p class="price">450,000₫</p>
+                    <button>Thêm vào giỏ</button>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section>
+            <h2>Về chúng tôi</h2>
+            <p>Cửa hàng ABC chuyên cung cấp quần áo, giày dép chất lượng cao.</p>
+        </section>
+
+        <section>
+            <h2>Liên hệ</h2>
+            <ul>
+                <li>Email: contact@abcshop.com</li>
+                <li>Hotline: 0123 456 789</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Theo dõi chúng tôi</h2>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </section>
+
+        <p>&copy; 2025 Cửa hàng ABC. All rights reserved.</p>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

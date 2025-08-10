@@ -6,3 +6,18 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+
+
+.custom-button{
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #458c02;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 34px;
+  padding-right: 34px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}

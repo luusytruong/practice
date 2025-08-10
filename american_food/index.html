@@ -2,109 +2,154 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="/v3417.tailwindcss.js"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="/cdn.tailwindcss.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css" />
+  <style type="text/tailwindcss">
+    @theme {
+        --color-primary: #215f00;
+        --color-secondary: #438c02;
+        --font-roboto: "Roboto";
+        --font-ale: "Alegreya Sans";
+      }
+    </style>
 </head>
 
-<body>
-
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <a href="/"><img src="logo.png" alt="Logo Cửa hàng ABC"></a>
-        </div>
-
-        <!-- Navigation -->
-        <nav>
-            <ul>
-                <li><a href="/">Trang chủ</a></li>
-                <li><a href="/san-pham">Sản phẩm</a></li>
-                <li><a href="/khuyen-mai">Khuyến mãi</a></li>
-                <li><a href="/lien-he">Liên hệ</a></li>
-            </ul>
-        </nav>
-
+<body class="font-roboto">
+  <!-- Header -->
+  <header>
+    <div class="bg-primary text-white">
+      <div class="relative h-[90px] flex justify-between items-center max-w-[1440px] mx-auto px-[57px]">
         <!-- Search + Cart -->
         <div class="header-actions">
-            <form action="/search" method="get">
-                <label for="search" class="visually-hidden">Tìm kiếm</label>
-                <input type="text" id="search" name="q" placeholder="Tìm sản phẩm..." />
-                <button type="submit">Tìm</button>
-            </form>
-            <a href="/gio-hang" class="cart">Giỏ hàng (0)</a>
+          <form action="/search" method="get" class="border-b relative flex items-center">
+            <label for="search" class="absolute left-0 pointer-events-auto">Search here</label>
+            <input type="text" id="search" name="search" class="w-[283px] py-2 outline-0" />
+            <button type="submit" class="absolute right-0 pointer-events-auto">
+              <i class="fa-solid fa-magnifying-glass text-lg"></i>
+            </button>
+          </form>
         </div>
-    </header>
+        <div class="logo absolute left-1/2 -translate-x-1/2">
+          <a href="/"><img src="./assets/images/header/logo.png" alt="Logo Cửa hàng ABC" />
+          </a>
+        </div>
+        <div class="flex items-center gap-11.5">
+          <div class="text-[25px]">
+            <a href="#">Register</a>
+            <span>/</span>
+            <a href="#">Login</a>
+          </div>
+          <div class="flex items-center gap-4">
+            <button class="flex items-center">
+              <i class="fa-regular fa-heart text-2xl"></i>
+              <span class="leading-5 bg-secondary rounded-full aspect-square w-5 h-5 -mt-8">1</span>
+            </button>
+            <button class="flex items-center">
+              <i class="fa-regular fa-cart-shopping text-2xl"></i>
+              <span class="leading-5 bg-secondary rounded-full aspect-square w-5 h-5 -mt-8">1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="max-w-[1440px] mx-auto font-medium">
+      <ul class="text-2xl flex items-center justify-center gap-10 text-primary">
+        <li class="py-6.5"><a href="/">HOME</a></li>
+        <li class="py-6.5"><a href="/">ABOUT US</a></li>
+        <li class="py-6.5"><a href="/">SERVICE</a></li>
+        <li class="py-6.5"><a href="/">PRICING</a></li>
+        <li class="py-6.5"><a href="/">BLOG</a></li>
+        <li class="py-6.5"><a href="/">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Main content -->
-    <main>
+  <!-- Main content -->
+  <main class="max-w-[1440px] mx-auto">
+    <!-- Banner / Promotion -->
+    <section aria-label="Khuyến mãi" class="relative text-primary leading-16">
+      <img class="w-full" src="./assets/images/banner/banner.png" alt="Sale 50% tất cả sản phẩm" />
+      <div class="absolute inset-0 px-[57px] w-1/2 flex justify-center flex-col">
+        <h2 class="text-[66px] font-extrabold font-ale">AMERICAN FOOD</h2>
+        <h3 class="text-[54px] font-medium font-ale">The Best Taste Food</h3>
+        <div class="w-[354px] h-[3px] bg-primary my-7.5"></div>
+        <p class="text-2xl text-secondary mb-15 pr-[57px]">
+          Lorem Ipsum available, but the majority have suffered alteration in
+          some form, by injected humour, or randomised words
+        </p>
+        <div class="text-white text-xl flex items-center gap-2.5">
+          <button class="h-19.5 bg-primary rounded-br-4xl rounded-tl-4xl w-[222px]">
+            ORDER NOW
+          </button>
+          <button class="h-19.5 bg-primary rounded-br-4xl rounded-tl-4xl w-[90px]">
+            <i class="fa-regular fa-arrow-left"></i>
+          </button>
+        </div>
+      </div>
+    </section>
 
-        <!-- Banner / Promotion -->
-        <section aria-label="Khuyến mãi">
-            <img src="banner.jpg" alt="Sale 50% tất cả sản phẩm">
-        </section>
+    <!-- Product categories -->
+    <section aria-labelledby="categories-title">
+      <h2 id="categories-title">Danh mục sản phẩm</h2>
+      <ul>
+        <li><a href="/danh-muc/ao">Áo</a></li>
+        <li><a href="/danh-muc/quan">Quần</a></li>
+        <li><a href="/danh-muc/giay">Giày</a></li>
+      </ul>
+    </section>
 
-        <!-- Product categories -->
-        <section aria-labelledby="categories-title">
-            <h2 id="categories-title">Danh mục sản phẩm</h2>
-            <ul>
-                <li><a href="/danh-muc/ao">Áo</a></li>
-                <li><a href="/danh-muc/quan">Quần</a></li>
-                <li><a href="/danh-muc/giay">Giày</a></li>
-            </ul>
-        </section>
+    <!-- Featured products -->
+    <section aria-labelledby="featured-title">
+      <h2 id="featured-title">Sản phẩm nổi bật</h2>
+      <div class="product-list">
+        <article class="product">
+          <img src="ao1.jpg" alt="Áo thun nam" />
+          <h3>Áo thun nam</h3>
+          <p class="price">250,000₫</p>
+          <button>Thêm vào giỏ</button>
+        </article>
 
-        <!-- Featured products -->
-        <section aria-labelledby="featured-title">
-            <h2 id="featured-title">Sản phẩm nổi bật</h2>
-            <div class="product-list">
-                <article class="product">
-                    <img src="ao1.jpg" alt="Áo thun nam">
-                    <h3>Áo thun nam</h3>
-                    <p class="price">250,000₫</p>
-                    <button>Thêm vào giỏ</button>
-                </article>
+        <article class="product">
+          <img src="giay1.jpg" alt="Giày thể thao" />
+          <h3>Giày thể thao</h3>
+          <p class="price">450,000₫</p>
+          <button>Thêm vào giỏ</button>
+        </article>
+      </div>
+    </section>
+  </main>
 
-                <article class="product">
-                    <img src="giay1.jpg" alt="Giày thể thao">
-                    <h3>Giày thể thao</h3>
-                    <p class="price">450,000₫</p>
-                    <button>Thêm vào giỏ</button>
-                </article>
-            </div>
-        </section>
+  <!-- Footer -->
+  <footer>
+    <section>
+      <h2>Về chúng tôi</h2>
+      <p>Cửa hàng ABC chuyên cung cấp quần áo, giày dép chất lượng cao.</p>
+    </section>
 
-    </main>
+    <section>
+      <h2>Liên hệ</h2>
+      <ul>
+        <li>Email: contact@abcshop.com</li>
+        <li>Hotline: 0123 456 789</li>
+      </ul>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-        <section>
-            <h2>Về chúng tôi</h2>
-            <p>Cửa hàng ABC chuyên cung cấp quần áo, giày dép chất lượng cao.</p>
-        </section>
+    <section>
+      <h2>Theo dõi chúng tôi</h2>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>Liên hệ</h2>
-            <ul>
-                <li>Email: contact@abcshop.com</li>
-                <li>Hotline: 0123 456 789</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Theo dõi chúng tôi</h2>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
-        </section>
-
-        <p>&copy; 2025 Cửa hàng ABC. All rights reserved.</p>
-    </footer>
-    <script src="./assets/js/script.js"></script>
+    <p>&copy; 2025 Cửa hàng ABC. All rights reserved.</p>
+  </footer>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

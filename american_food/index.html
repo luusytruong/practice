@@ -15,6 +15,9 @@
         --font-roboto: "Roboto";
         --font-ale: "Alegreya Sans";
       }
+      .btn-primary{
+        @apply h-19.5 bg-primary rounded-br-4xl rounded-tl-4xl
+      }
     </style>
 </head>
 
@@ -72,7 +75,7 @@
   <!-- Main content -->
   <main class="max-w-[1440px] mx-auto">
     <!-- Banner / Promotion -->
-    <section aria-label="Khuyến mãi" class="relative text-primary leading-16">
+    <section aria-label="Khuyến mãi" class="relative text-primary leading-16 overflow-hidden">
       <img class="w-full" src="./assets/images/banner/banner.png" alt="Sale 50% tất cả sản phẩm" />
       <div class="absolute inset-0 px-[57px] w-1/2 flex justify-center flex-col">
         <h2 class="text-[66px] font-extrabold font-ale">AMERICAN FOOD</h2>
@@ -83,10 +86,10 @@
           some form, by injected humour, or randomised words
         </p>
         <div class="text-white text-xl flex items-center gap-2.5">
-          <button class="h-19.5 bg-primary rounded-br-4xl rounded-tl-4xl w-[222px]">
+          <button class="btn-primary w-[222px]">
             ORDER NOW
           </button>
-          <button class="h-19.5 bg-primary rounded-br-4xl rounded-tl-4xl w-[90px]">
+          <button class="btn-primary w-[90px]">
             <i class="fa-regular fa-arrow-left"></i>
           </button>
         </div>
@@ -94,13 +97,109 @@
     </section>
 
     <!-- Product categories -->
-    <section aria-labelledby="categories-title">
-      <h2 id="categories-title">Danh mục sản phẩm</h2>
-      <ul>
-        <li><a href="/danh-muc/ao">Áo</a></li>
-        <li><a href="/danh-muc/quan">Quần</a></li>
-        <li><a href="/danh-muc/giay">Giày</a></li>
-      </ul>
+    <section aria-labelledby="categories-title" class="px-[57px] text-primary">
+      <img src="./assets/images/about_us/title.png" alt="about us" class="mx-auto mt-30">
+      <p class="text-[25px] text-center mt-8 w-4/8 mx-auto">Lorem Ipsum available, but the majority have
+        suffered alteration in some form by injected humour</p>
+      <div class="grid grid-cols-2 mt-28 gap-32">
+        <div class="">
+          <h3 class="text-[54px] font-medium">Let food be thy medicine medicine be thy food.</h3>
+          <p class="text-[25px] mt-6">Lorem Ipsum available, but the majority have suffered alteration in some form by
+            injected humour randomise
+            words which don't look even slightly believable. If you are going to use a passage
+            <br>
+            <br>
+            Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+          </p>
+          <div class="text-white text-xl flex items-center gap-2.5 mt-10">
+            <button class="btn-primary w-[222px]">
+              READ MORE
+            </button>
+            <button class="btn-primary w-[90px]">
+              <i class="fa-regular fa-arrow-left"></i>
+            </button>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/images/about_us/video.png" alt="video">
+        </div>
+      </div>
+      <div class="grid grid-cols-2 mt-37.5 gap-32">
+        <div class="order-2">
+          <h3 class="text-[54px] font-medium">Let food be thy medicine medicine be thy food.</h3>
+          <p class="text-[25px] mt-6">Lorem Ipsum available, but the majority have suffered alteration in some form by
+            injected humour randomise
+            words which don't look even slightly believable. If you are going to use a passage
+            <br>
+            <br>
+            Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+          </p>
+          <div class="text-white text-xl flex items-center gap-2.5 mt-10">
+            <button class="btn-primary w-[222px]">
+              READ MORE
+            </button>
+            <button class="btn-primary w-[90px]">
+              <i class="fa-regular fa-arrow-left"></i>
+            </button>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/images/about_us/video.png" alt="video">
+        </div>
+      </div>
+    </section>
+
+    <!-- service -->
+    <section aria-labelledby="categories-title" class="px-[57px] text-primary">
+      <img src="./assets/images/service/title-service.png" alt="service" class="mx-auto mt-30">
+      <p class="text-[25px] text-center mt-8 w-4/8 mx-auto">Lorem Ipsum available, but the majority have
+        suffered alteration in some form by injected humour</p>
+      <div class="grid grid-cols-2 mt-30 gap-32">
+        <div class="">
+          <h3 class="text-[54px] font-medium">Let food be thy medicine medicine be thy food.</h3>
+          <p class="text-[25px] mt-6">Lorem Ipsum available, but the majority have suffered alteration in some form by
+            injected humour randomise
+            words which don't look even slightly believable. If you are going to use a passage
+            <br>
+            <br>
+            Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+          </p>
+          <div class="text-white text-xl flex items-center gap-2.5 mt-10">
+            <button class="btn-primary w-[222px]">
+              READ MORE
+            </button>
+            <button class="btn-primary w-[90px]">
+              <i class="fa-regular fa-arrow-left"></i>
+            </button>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/images/about_us/video.png" alt="video">
+        </div>
+      </div>
+      <div class="grid grid-cols-2 mt-30 gap-32">
+        <div class="order-2">
+          <h3 class="text-[54px] font-medium">Let food be thy medicine medicine be thy food.</h3>
+          <p class="text-[25px] mt-6">Lorem Ipsum available, but the majority have suffered alteration in some form by
+            injected humour randomise
+            words which don't look even slightly believable. If you are going to use a passage
+            <br>
+            <br>
+            Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+          </p>
+          <div class="text-white text-xl flex items-center gap-2.5 mt-10">
+            <button class="btn-primary w-[222px]">
+              READ MORE
+            </button>
+            <button class="btn-primary w-[90px]">
+              <i class="fa-regular fa-arrow-left"></i>
+            </button>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/images/about_us/video.png" alt="video">
+        </div>
+      </div>
     </section>
 
     <!-- Featured products -->

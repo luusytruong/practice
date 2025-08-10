@@ -12,14 +12,16 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="header__topbar">
-            <i class="fa-light fa-scissors"></i>
-            <p class="header__topbar__content">
-                <span>#Free EU Delivery + Return Over </span>
-                <strong class="-font-white">€99.00</strong>
-                <span>Collect From Store</span>
-            </p>
+            <div class="header__topbar__wrapper">
+                <i class="fa-light fa-scissors content--white"></i>
+                <p class="header__topbar__content">
+                    <span>#Free EU Delivery + Return Over </span>
+                    <span class="content--white">€99.00</span>
+                    <span>Collect From Store</span>
+                </p>
+            </div>
         </div>
         <div class="header__middle">
             <div class="header__social">
@@ -28,28 +30,32 @@
                 <a href="#" class="header__social__icon"><i class="fa-brands fa-instagram"></i></a>
             </div>
             <div class="header__logo">
-                <img src="./assets/images/logo/logo.png" alt="logo">
+                <img src="./assets/images/logo/logo_header.png" alt="logo">
             </div>
             <div class="header__actions">
-                <div class="header__card">
+                <a href="#" class="header__card">
                     CART
                     <span class="header__card__count">3</span>
-                </div>
-                <div class="header__search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <div class="header__profile">
-                    <i class="fa-solid fa-user"></i>
-                </div>
+                </a>
+                <a href="#" class="header__search">
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                </a>
+                <a href="#" class="header__profile">
+                    <i class="fa-regular fa-user"></i>
+                </a>
             </div>
         </div>
         <nav class="header__nav">
             <ul class="header__nav__list">
-                <li class="header__nav__item"><a class="header__nav__link" href="#">Home<i
-                            class="fa-solid fa-chevron-down"></i></a></li>
+                <li class="header__nav__item">
+                    <a class="header__nav__link" href="#">Home</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </li>
                 <li class="header__nav__item"><a class="header__nav__link" href="#">Shop</a></li>
-                <li class="header__nav__item"><a class="header__nav__link" href="#">Pages<i
-                            class="fa-solid fa-chevron-down"></i></a></li>
+                <li class="header__nav__item">
+                    <a class="header__nav__link" href="#">Pages</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </li>
                 <li class="header__nav__item"><a class="header__nav__link" href="#">About</a></li>
                 <li class="header__nav__item"><a class="header__nav__link" href="#">Blog</a></li>
             </ul>

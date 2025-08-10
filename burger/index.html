@@ -20,7 +20,8 @@
                 <div
                     class="pb-12 pt-4 lg:py-0 lg:h-[180px] container mx-auto max-w-[1440px] px-[57px] flex items-center justify-between lg:flex-row flex-col-reverse gap-4 lg:gap-0">
                     <div class="flex items-center lg:w-auto w-full">
-                        <a href="./index.html"><img class="w-[180px] md:w-[200px] lg:w-auto" src="./assets/images/header/logo.png" alt="logo"></a>
+                        <a href="./index.html"><img class="w-[180px] md:w-[200px] lg:w-auto"
+                                src="./assets/images/header/logo.png" alt="logo"></a>
                         <button class="ml-auto p-3 overflow-hidden aspect-square grid place-items-center lg:hidden">
                             <i class="fa-solid fa-bars text-2xl md:text-3xl text-[#43200b]"></i>
                         </button>
@@ -96,7 +97,7 @@
                     </button>
                 </div>
             </section>
-            <section class="container mx-auto max-w-[1440px] lg:h-[741px] mb-10 w-full">
+            <section class="container mx-auto max-w-[1440px] lg:h-[741px] mb-26 w-full">
                 <div class="grid justify-between h-full">
                     <div class="flex flex-col items-center">
                         <h1 class="font-alf uppercase text-4xl md:text-[50px] text-center -mt-3.5">Choose & enjoy</h1>
@@ -151,34 +152,51 @@
                     </div>
                 </div>
             </section>
-            <section></section>
+            <section class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-11 max-w-[1294px] mx-auto py-6 bg-[#fff] shadow-2xl pl-[26px] lg:pl-[58px] pr-[26px]">
+                <div class="flex flex-col">
+                    <h4 class="text-[29px] font-bebas">DISCOVER</h4>
+                    <h2 class="text-[42px] font-alf">UPCOMING EVENTS</h2>
+                    <p class="text-[21px] text-[#3d3d3d] ">Lorem ipsum dolor sit amet, consectetur adipisc-ing elit, sed do eiusmod tempor incididunt
+                        utlabore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus commodo
+                        viverramaecenas accumsan lacus vel facilisis.</p>
+                    <div class="flex gap-2 lg:mt-auto mt-6">
+                        <span class="h-4 w-4 bg-[#ffc045] rounded-full cursor-pointer hover:opacity-90"></span>
+                        <span class="h-4 w-4 bg-[#dcdcdc] rounded-full cursor-pointer hover:opacity-90"></span>
+                        <span class="h-4 w-4 bg-[#dcdcdc] rounded-full cursor-pointer hover:opacity-90"></span>
+                    </div>
+                </div>
+                <div>
+                    <img class="h-auto w-full md:h-full  object-cover" src="./assets/images/discover/Burger-Image.png" alt="Burger-Image">
+                </div>
+            </section>
 
-            <section class="flex flex-col items-center pt-[132px] pb-[178px] ">
-                <h5 class="text-[28px] text-[#43200b] leading-[1]">RESERVATION</h5>
-                <h5 class="text-[50px] text-[#43200b] mt-[12px] font-bold leading-[1]">BOOK YOUR TABLE</h5>
-                <form action="#" method="get" class="grid grid-cols-2 gap-[26px] max-w-[786px] w-full mt-[86px]">
+            <section class="flex flex-col items-center pt-[132px] pb-[178px] relative">
+                <h5 class="text-[28px] text-[#43200b] leading-[1] font-bebas">RESERVATION</h5>
+                <h5 class="text-[50px] text-[#43200b] mt-[12px] font-bold leading-[1] font-alf">BOOK YOUR TABLE</h5>
+                <form action="#" method="get"
+                    class="grid grid-cols-2 gap-[26px] max-w-[786px] w-full mt-[86px] z-10 font-bebas">
                     <input
-                        class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#333] placeholder:text-black"
+                        class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#333] placeholder:text-[#666]"
                         placeholder="NAME">
                     <input
-                        class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#333] placeholder:text-black"
+                        class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#333] placeholder:text-[#666]"
                         placeholder="EMAIL">
                     <input
-                        class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#333] placeholder:text-black"
+                        class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#333] placeholder:text-[#666]"
                         placeholder="DATE">
                     <input
-                        class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#333] placeholder:text-black"
+                        class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#333] placeholder:text-[#666]"
                         placeholder="TIME">
                     <input
-                        class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#333] placeholder:text-black"
+                        class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#333] placeholder:text-[#666]"
                         placeholder="PEOPLE">
                     <input
-                        class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] text-[#fff] text-2xl bg-[#df1c1c] cursor-pointer hover:opacity-80"
+                        class="outline-none border-[1px] border-solid border-[#bebebe] p-[18px] !text-white text-2xl bg-[#df1c1c] cursor-pointer hover:opacity-80 font-alf"
                         type="submit" value="FIND A TABLE">
                 </form>
                 <img class="h-[344px] absolute left-0" src="./assets/images/reservation/Burger.png">
-                <img class="h-[439px] absolute left-[10%] top-[]" src="./assets/images/reservation/Bottle.png">
-                <img class="h-[40px]" src="./assets/images/reservation/Image.png">
+                <img class="h-[439px] absolute left-[10%] top-[33%]" src="./assets/images/reservation/Bottle.png">
+                <img class="h-[400px] absolute right-0 bottom-0" src="./assets/images/reservation/Image.png">
             </section>
         </main>
         <!-- 58 66 -->

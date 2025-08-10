@@ -21,3 +21,12 @@
   font-weight: bold;
   text-transform: uppercase;
 }
+.service__description{
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all .8s ease-in-out;
+}
+.service__description.visible{
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,6 +1,15 @@
+* {
+  transition: all 0.12s ease-in-out;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
 .header__topbar__wrapper,
 .header__middle,
-.header__nav {
+.header__nav,
+.banner {
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -17,7 +26,7 @@
 .header__topbar {
   background-color: #111111;
 
-  font-size: 22px;
+  font-size: 15px;
   line-height: 14px;
 }
 
@@ -27,6 +36,9 @@
 
 .content--white {
   color: white;
+}
+.content--underline {
+  text-decoration: underline;
 }
 
 .header__middle {
@@ -106,14 +118,6 @@
 a {
   text-decoration: none;
 }
-* {
-  transition: all 0.24s ease-in-out;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-}
 
 .header__nav {
   height: 73px;
@@ -144,4 +148,104 @@ a {
   font-size: 18px;
   color: #222222;
   font-weight: 600;
+}
+
+/* banner */
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+.banner__button i {
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  z-index: 100;
+  color: #e9e9e9;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background: white;
+    color: #111111;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+#btn-next {
+  right: 7px;
+  left: unset;
+}
+.banner__list {
+  display: flex;
+  transition: all 1s ease-in-out;
+}
+.banner__list__item {
+  position: relative;
+  width: 100%;
+}
+.banner__item__content {
+  position: absolute;
+  inset: 0;
+}
+.item__right {
+  width: 50%;
+  height: 100%;
+  padding: 0 96px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.item__subtitle {
+  font-size: 24px;
+  color: #666666;
+  font-family: "MarkMyWords";
+  margin-bottom: 8px;
+}
+.item__title {
+  font-size: 36px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: Lato;
+}
+.item__desc {
+  margin-top: 8px;
+  font-size: 18px;
+  color: #aaaaaa;
+}
+.item__desc__price {
+  font-size: 28px;
+  color: white;
+  text-decoration: underline;
+}
+
+.item__actions {
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn {
+  height: 42px;
+  padding: 0 8px;
+  border: 2px solid #e9e9e9;
+  border-radius: 5px;
+  background: transparent;
+}
+.item__btn {
+  min-width: 118px;
+}
+.item__btn:nth-child(1) {
+  color: white;
+}
+.item__btn:nth-child(2) {
+  width: 145px;
+  background: white;
 }
